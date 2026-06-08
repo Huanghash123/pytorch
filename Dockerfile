@@ -9,4 +9,3 @@ RUN pip install --upgrade pip && python -m pip install --upgrade setuptools && \
     
 RUN pip install torch==2.5.1 torchvision==0.20.1 numpy==1.26.4 pillow  plyfile huggingface_hub safetensors
 
-COPY ./fonts/* /opt/conda/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/
