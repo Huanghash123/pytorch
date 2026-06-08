@@ -7,6 +7,6 @@ RUN conda install -y scikit-learn pandas flake8 yapf isort yacs future libgcc
 RUN pip install --upgrade pip && python -m pip install --upgrade setuptools && \
     pip install opencv-python tb-nightly matplotlib logger_tt tabulate tqdm wheel mccabe scipy
     
-RUN pip install torch==2.5.1 torchvision==0.20.1 numpy==1.26.4 pillow opencv-python plyfile huggingface_hub safetensors
+RUN pip install torch==2.5.1 torchvision==0.20.1 numpy==1.26.4 pillow  plyfile huggingface_hub safetensors
 
 COPY ./fonts/* /opt/conda/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/
